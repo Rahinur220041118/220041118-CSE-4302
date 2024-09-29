@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Disc_D/IUT_Academics/3rd_Semester/CSE_4302_OOP_Lab/Lab 5",
+      "program": "c:/Disc_D/IUT_Academics/3rd_Semester/CSE_4302_OOP_Lab/Lab 5/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
