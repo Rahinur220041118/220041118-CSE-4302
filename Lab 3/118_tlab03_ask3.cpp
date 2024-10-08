@@ -2,25 +2,25 @@
 
 using namespace std;
 
-class Time
+class Counter
 {
 private:
-    int hour;
-    int minute;
+    int count;
+    int increment_step;
     int second;
 
 public:
-    Time() : hour(0), minute(0), second(0)
+    Counter() : count(0), increment_step(0), second(0)
     {
     }
 
     int hours()
     {
-        return hour;
+        return count;
     }
     int minutes()
     {
-        return minute;
+        return increment_step;
     }
     int seconds()
     {
@@ -28,18 +28,18 @@ public:
     }
     void reset(int h, int m, int s)
     {
-        hour = h;
-        minute = m;
+        count = h;
+        increment_step = m;
         second = s;
     }
     void advance(int h, int m, int s)
     {
         second += s;
         second %= 60;
-        minute += m + s / 60;
-        minute %= 60;
-        hour += h + (m + s / 60) / 60;
-        hour %= 24;
+        increment_step += m + s / 60;
+        increment_step %= 60;
+        count += h + (m + s / 60) / 60;
+        count %= 24;
     }
     void print()
     {
@@ -49,7 +49,7 @@ public:
 
 int main()
 {
-    Time t1;
+    Counter t1;
 
     t1.reset(0, 0, 0);
     t1.print();

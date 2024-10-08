@@ -2,39 +2,39 @@
 
 using namespace std;
 
-class Time
+class Counter
 {
 private:
-    int hour;
-    int minute;
+    int count;
+    int increment_step;
 
 public:
-    Time() : hour(0)
+    Counter() : count(0)
     {
     }
     void setIncrementStep(int step)
     {
-        minute = step;
+        increment_step = step;
     }
     int getCount()
     {
-        return hour;
+        return count;
     }
 
     void increment()
     {
-        hour += minute;
+        count += increment_step;
     }
 
     void resetCount()
     {
-        hour = 0;
+        count = 0;
     }
 };
 
 int main()
 {
-    Time c1;
+    Counter c1;
 
     cout << "Count is equal to " << c1.getCount() << endl;
 
