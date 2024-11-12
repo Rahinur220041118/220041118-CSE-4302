@@ -1,8 +1,9 @@
+#ifndef ANIMAL_H
+#define ANIMAL_H
+
 #include <iostream>
 #include <string>
 using namespace std;
-#ifndef ANIMAL_H
-#define ANIMAL_H
 class animal {
 private:
     string nameOfAnimal;
