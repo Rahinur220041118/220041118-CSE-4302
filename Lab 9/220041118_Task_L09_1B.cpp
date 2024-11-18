@@ -7,7 +7,7 @@
 using namespace std;
 
 bool compare(LibraryResource* l1, LibraryResource* l2){
-    return (l1->getPrice() * l1->get_no_of_copies()) <= (l2->getPrice() * l2->get_no_of_copies());
+    return l1->getPrice() <= l2->getPrice();
 }
 void sort_resources_price(LibraryResource** r, int n){
     sort(r, r+n, compare);
